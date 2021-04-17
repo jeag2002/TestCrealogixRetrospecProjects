@@ -42,7 +42,28 @@ public class AfterDAOAOPAspect {
     @AfterReturning(value = "execution(* com.example.dao.*.*(..))",
             returning = "result")
     public void afterProcess(JoinPoint joinPoint, Object result) {
-        logger.info("[AFTER-RESULT-DAOAOP] {} returned with value {}", joinPoint, result);
+        
+        String inputParameterStr = "";
+        Object[] inputParameter = joinPoint.getArgs();
+        
+        if (inputParameter.length > 0){
+            
+            for(int i=0; i<inputParameter.length; i++){
+                
+                if (inputParameter[i] instanceof Integer){
+                    
+                    inputParameterStr = ((Integer)inputParameter[i]).toString();
+                    
+                }else if (inputParameter[i] instanceof UserDetails){
+                    
+                    inputParameterStr = ((UserDetails)inputParameter[i]).toString();
+                }
+                
+            }
+            
+        }
+        
+        logger.info("[AFTER-RESULT-DAOAOP] {} with this input {} returned with value {}", joinPoint, inputParameterStr, result);
         logDetailsDAO.saveAndFlush(new LogDetails("UserData activity"));
     }
     /**
@@ -52,6 +73,20 @@ public class AfterDAOAOPAspect {
      */
     @After(value = "execution(* com.example.dao.*.*(..))")
     public void after(JoinPoint joinPoint) {
-        logger.info("[AFTER-DAOAOP] after execution of {}", joinPoint);
+        
+        String inputParameterStr = "";
+        Object[] inputParameter = joinPoint.getArgs();
+        
+        if (inputParameter.length > 0){    
+            for(int i=0; i<inputParameter.length; i++){
+                if (inputParameter[i] instanceof Integer){
+                    inputParameterStr = ((Integer)inputParameter[i]).toString();
+                }else if (inputParameter[i] instanceof UserDetails){
+                    inputParameterStr = ((UserDetails)inputParameter[i]).toString();
+                }
+            }
+        }
+        
+        logger.info("[AFTER-DAOAOP] with this input {} after execution of {}", inputParameterStr, joinPoint);
     }
 }

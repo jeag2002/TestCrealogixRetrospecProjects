@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.example.dao.UserDAO;
 import com.example.entity.UserDetails;
+import com.example.oap.TrackTime;
 
 // TODO: Auto-generated Javadoc
 /**
@@ -22,6 +23,7 @@ public class UserServiceImpl implements UserService {
     /* (non-Javadoc)
      * @see com.example.service.UserService#findAll()
      */
+    //@TrackTime
     @Override
     public List<UserDetails> findAll() {
         List<UserDetails> listUsers = userDAO.findAll();
@@ -31,6 +33,7 @@ public class UserServiceImpl implements UserService {
     /* (non-Javadoc)
      * @see com.example.service.UserService#findById(int)
      */
+    @TrackTime
     @Override
     public UserDetails findById(int id) {
         UserDetails user = userDAO.findById(id);
