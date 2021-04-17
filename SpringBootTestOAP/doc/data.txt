@@ -1,0 +1,19 @@
+checkstyle plugin 2.17 --> checkstyle 7.0
+
+https://scrutinizer-ci.com/docs/tools/java/checkstyle/
+
+https://checkstyle.org/eclipse-cs/#!/install
+https://sourceforge.net/projects/eclipse-cs/
+https://sourceforge.net/projects/eclipse-cs/files/Eclipse%20Checkstyle%20Plug-in/7.2.0/ <== version que funciona con checkstyle 2.17
+https://bintray.com/eclipse-cs/eclipse-cs/update-site-archive/ <== disable May 1 2021
+
+
+https://stackoverflow.com/questions/8409074/how-can-i-easily-fix-checkstyle-errors#:~:text=Right%20click%20on%20the%20java,This%20corrects%20the%20problem.
+https://www.vogella.com/tutorials/Checkstyle/article.html
+https://stackoverflow.com/questions/997021/how-to-get-rid-of-checkstyle-message-file-does-not-end-with-a-newline
+https://stackoverflow.com/questions/25198091/how-to-remove-trailing-space-behind-multiline-comments-asterisk-in-eclipse-auto
+https://stackoverflow.com/questions/5763747/h2-in-memory-database-table-not-found
+https://dimitr.im/loading-initial-data-with-spring
+
+
+-Xverify:none

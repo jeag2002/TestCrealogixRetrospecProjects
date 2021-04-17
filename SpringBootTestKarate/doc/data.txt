@@ -1,0 +1,9 @@
+https://github.com/intuit/karate
+https://github.com/Sdaas/hello-karate
+
+https://medium.com/@alicealdaine/top-10-api-testing-tools-rest-soap-services-5395cb03cfa9
+
+https://semaphoreci.com/community/tutorials/testing-a-java-spring-boot-rest-api-with-karate
+
+https://faun.pub/karate-integration-with-jenkins-672bbef741b9
+https://blog.knoldus.com/jenkins-integration-using-karate-dsl/
