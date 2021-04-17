@@ -12,4 +12,5 @@ SpringBootTest => CheckStyle evaluation system
 SpringBootTestKarate => BBD/Regression Test with DSL based on Cucumber
 SpringBootTestRestAssure => BBD/Regresion Test Java Engine (Rest Assure)
 SpringBootTestOAP => SpringBoot OAP (Aspects) engine.
+SpringBootEventBus => SpringBoot EventBus engine.
 

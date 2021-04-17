@@ -1,0 +1,2 @@
+DROP TABLE USER_DETAILS IF EXISTS;
+CREATE TABLE IF NOT EXISTS USER_DETAILS(id INT NOT NULL PRIMARY KEY, email varchar(50), password varchar(50), created_at timestamp default CURRENT_TIMESTAMP, updated_at timestamp default CURRENT_TIMESTAMP);

@@ -1,0 +1,1 @@
+INSERT INTO USER_DETAILS(id, email, password, created_at, updated_at) VALUES (0,'jeag2002@gmail.com', 'Abcd1234', parsedatetime('17-09-2012 18:47:52.690', 'dd-MM-yyyy hh:mm:ss.SS'), parsedatetime('17-09-2012 18:47:52.690', 'dd-MM-yyyy hh:mm:ss.SS'));
