@@ -14,3 +14,5 @@ https://stackoverflow.com/questions/997021/how-to-get-rid-of-checkstyle-message-
 https://stackoverflow.com/questions/25198091/how-to-remove-trailing-space-behind-multiline-comments-asterisk-in-eclipse-auto
 https://stackoverflow.com/questions/5763747/h2-in-memory-database-table-not-found
 https://dimitr.im/loading-initial-data-with-spring
+
+https://alvinalexander.com/java/jwarehouse/commons-math3-3.6.1/checkstyle.xml.shtml
