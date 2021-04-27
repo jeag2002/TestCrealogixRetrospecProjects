@@ -22,7 +22,8 @@ import com.example.entity.UserDetails;
  * The Class AfterDAOAOPAspect.
  */
 @DependsOn("springApplicationContextHolder")
-@Configuration
+//@Configuration
+@Component
 @Aspect
 public class AfterDAOAOPAspect {
     

@@ -23,7 +23,7 @@ public class UserServiceImpl implements UserService {
     /* (non-Javadoc)
      * @see com.example.service.UserService#findAll()
      */
-    //@TrackTime
+    @TrackTime
     @Override
     public List<UserDetails> findAll() {
         List<UserDetails> listUsers = userDAO.findAll();
